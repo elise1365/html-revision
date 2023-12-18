@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+    <title>SVG</title>
+    <style>
+        body {
+            background-color: #7092BE;
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <section>
+            <h1>Basics</h1>
+            <p><strong>S</strong>calable <strong>V</strong>ector <strong>G</strong>raphics</p>
+            <p>SVG is smaller than bitmap graphics</p>
+            <p>Better than bitmapped graphics because SVGs scale better than pixels, which become large and blocky</p>
+            <img src="svg html img.png" alt="Image showing a basic SVG image being written">
+        </section>
+        <section>
+            <h1>Types of sizing</h1>
+            <ol>
+                <li><strong>Explicit</strong> sizing is where you specify the exact width and height of an SVG element</li>
+                <li><strong>Responsive</strong> sizing is where the element is scaled dynamiclly based on the size of the parent container/viewport</li>
+            </ol>
+        </section>
+        <section>
+            <h1>CSS</h1>
+            <p>Can always put fill, stroke etc of a shape in CSS</p>
+        </section>
+        <section>
+            <h1>Path</h1>
+            <p>To create lines/ more complex shapes use path - path d=""</p>
+            <ul>
+                <li><strong>M</strong> - moves pen tip absolute</li>
+                <li><strong>m</strong> - moves pen top relative to last point</li>
+            </ul>
+            <p>m 10 20</p>
+            <p>To draw use:</p>
+            <ul>
+                <li>L/l</li>
+                <li>C - cubic bezier</li>
+                <li>Q - quadratic bezier</li>
+            </ul>
+        </section>
+        <section>
+            <h1>Attributes 2 know</h1>
+            <ul>
+                <li>stroke_width="10"</li>
+                <li>fill="none"</li>
+            </ul>
+        </section>
+        <section>
+            <h1>Elements</h1>
+            <h3>Circles</h3>
+            <p>Created using the circle element</p>
+            <p>Takes 3 parameters</p>
+            <ol>
+                <li>cx</li>
+                <li>cy</li>
+                <li>r</li>
+            </ol>
+
+            <h3>Ellipses</h3>
+            <p>Like circles but have 2 radii - cx, cy, rx, ry</p>
+
+            <h3>Lines</h3>
+            <p>Draws a line between 2 points, takes 4 parameters - x1, y1, x2, y2</p>
+
+            <h3>Polylines</h3>
+            <p>Connects multiple points together, each point is written as a pair of coords and separated by a space</p>
+            <p>polyline points="20,20 20,80 80,80"</p>
+
+            <h3>Polygons</h3>
+            <p>Same as a polyline but automatically closes the path</p>
+
+            <h3>Text</h3>
+            <p>Must have an x and y point</p>
+            <p>text x="20" y="20"</p>
+
+            <h3>Grouping</h3>
+            <p>g element groups elements together - groups are useful because they reduce the need for repeated content</p>
+            <img src="html svg img.png" alt="Image gives an example of how the grouping element is used">
+            
+            <h3>Defs and use</h3>
+            <p>These elements allow for a group of elements to be defined and used in different places throughout an image</p>
+            <img src="html svg img 2.png" alt="image showing how defs and use elements are used">
+
+            <h3>Transform</h3>
+            <p>Can alter an element:</p>
+            <ul>
+                <li>Translate</li>
+                <li>Scale</li>
+                <li>Rotate</li>
+                <li>Skew x/y</li>
+                <li>Matrix</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Animation</h2>
+            <p>To create an animation:</p>
+            <img src="html svg img 3.png" alt="Displays how to make a basic animation">
+        </section>
+        <a href="pg5.html">Next page</a>
+    </article>
+</body>
